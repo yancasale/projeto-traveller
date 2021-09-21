@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Shape Divider */
+
+.custom-shape-divider-bottom-1631945214 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1631945214 svg {
+    position: relative;
+    display: block;
+    width: calc(262% + 1.3px);
+    height: 191px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1631945214 .shape-fill {
+    fill: #000;
+}
+
+.custom-shape-divider-bottom-1631945692 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1631945692 svg {
+    position: relative;
+    display: block;
+    width: calc(219% + 1.3px);
+    height: 160px;
+}
+
+.custom-shape-divider-bottom-1631945692 .shape-fill {
+    fill: #FFFFFF;
+}
+
+a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background: rgb(67, 206, 162);
+    background: linear-gradient(72deg, rgba(67, 206, 162, 1) 0%, rgba(24, 90, 157, 1) 100%);
+}
+
+/* Navbar */
+
+.header-navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.158);
+}
+
+.container-navbar {
+    display: flex;
+    width: 60%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.navbar-item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+.navbar-item a {
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.navbar-item i {
+    margin-right: 3px;
+}
+
+.links a {
+    margin-right: 9px;
+}
+
+.links i {
+    margin-right: 2px;
+}
+
+.icones {
+    justify-content: right;
+}
+
+.icones ul {
+    margin-left: 20px;
+}
+
+#ajuda {
+    margin-left: 20px;
+}
+
+
+/* Sticky Top Navbar*/
+
+.header-stickytop {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+}
+
+.redbg {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    height: 55px;
+    background-color: #4A3F35;
+}
+
+.header-stickytop a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+main {
+    padding-top: 60px;
+}
+
+
+.container-stickytop {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 40px auto;
+}
+
+.sticky-top-item {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.sticky-titulo a {
+    color: #fff;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.sticky-links a {
+    color: rgba(255, 255, 255, 0.6);
+    margin-left: 30px;
+}
+
+.sticky-links a:hover {
+    color: #fff;
+}
+
+.sticky-links {
+    justify-content: right;
+    width: 80%;
+}
+
+.sticky-links i {
+    margin-left: 3px;
+}
+
+.active {
+    color: #fff !important;
+}
+
+.header-content-container {
+    width: 100%;
+    height: 500px;
+}
+
+.header-content {
+    display: flex;
+    width: 60%;
+    height: 520px;
+    margin: 0 auto;
+}
+
+.content-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+}
+
+/* Main content */
+
+main {
+    height: 1000px;
+}
+
+.container-hospedagem h2 {
+    text-align: center;
+    /* border: 1px solid black; */
+}
+
+.hospedagem-opcao {
+    width: 100%;
+    height: 650px;
+    margin: 50px auto;
+    background-color: #F7F9FD;
+    border: 1px solid #F7F9FD;
+}
+
+
+.card-container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
