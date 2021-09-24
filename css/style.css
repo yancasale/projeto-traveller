@@ -333,12 +333,12 @@ main {
 
 .container-hospedagem h2 {
     text-align: center;
-
+    font-size: 2em;
 }
 
 .hospedagem-opcao {
     width: 100%;
-    height: 650px;
+    height: 700px;
     margin: 50px auto;
     background-color: #F7F9FD;
     border: 1px solid #F7F9FD;
@@ -350,13 +350,43 @@ main {
     margin: 50px auto;
 }
 
+.card-container h4 {
+    font-size: 1.8em;
+}
+
 .cards {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
     margin-top: 50px;
     margin-right: 50px;
+    height: 470px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn-primary {
+    background-color: #43cea2;
+    border: 1px solid #43cea2;
+}
+
+.btn-primary:hover {
+    background-color:#185a9d ;
+
+}
+
+.card-title {
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95em;
 }
 
 
