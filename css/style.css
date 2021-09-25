@@ -322,7 +322,7 @@ header {
     height: 40px;
     width: 15%;
     margin-left: 10px;
-    
+
 }
 
 /* Main content */
@@ -338,7 +338,6 @@ main {
 
 .hospedagem-opcao {
     width: 100%;
-    height: 700px;
     margin: 50px auto;
     background-color: #F7F9FD;
     border: 1px solid #F7F9FD;
@@ -375,7 +374,7 @@ main {
 }
 
 .btn-primary:hover {
-    background-color:#185a9d ;
+    background-color: #185a9d;
 
 }
 
@@ -452,7 +451,7 @@ main {
     .container-stickytop {
         width: 80%;
     }
-    
+
     .sticky-top-item {
         width: 80%;
     }
@@ -460,7 +459,7 @@ main {
     .sticky-titulo {
         width: 20%;
     }
-    
+
     .container-navbar {
         width: 80%;
     }
@@ -480,7 +479,7 @@ main {
         justify-content: center;
         align-items: center;
     }
-    
+
 }
 
 @media screen and (max-width: 1015px) {
@@ -507,5 +506,54 @@ main {
 
     .sticky-links {
         display: none;
+    }
+}
+
+@media screen and (max-width: 707px) {
+
+    .container-navbar {
+        width: 90%;
+    }
+
+    .links {
+        width: 5%;
+    }
+
+    .icones {
+        width: 95%;
+    }
+
+    .container-stickytop {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 509px) {
+
+    .segundo {
+        width: 100%;
+    }
+
+    .icones {
+        width: 100%;
+    }
+
+    .links {
+        display: none;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buscar {
+        display: flex;
+        width: 100% !important;
+    }
+
+    form .btn {
+        width: 40%;
+        margin-top: 30px;
     }
 }
