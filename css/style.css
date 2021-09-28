@@ -327,9 +327,6 @@ header {
 
 /* Main content */
 
-main {
-    height: 1000px;
-}
 
 .container-hospedagem h2 {
     text-align: center;
@@ -338,14 +335,22 @@ main {
 
 .hospedagem-opcao {
     width: 100%;
+    height: fit-content;
     margin: 50px auto;
     background-color: #F7F9FD;
-    border: 1px solid #F7F9FD;
+}
+
+.hospedagem-branco {
+    background-color: #FFF;
+}
+
+.titulo h4 {
+    padding-top: 40px;
 }
 
 
 .card-container {
-    width: 80%;
+    width: 100%;
     margin: 50px auto;
 }
 
@@ -358,6 +363,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding-left: 50px;
 }
 
 .card {
@@ -386,6 +392,10 @@ main {
 
 .card-text {
     font-size: 0.95em;
+}
+
+footer {
+    margin-top: 100px;
 }
 
 
@@ -534,8 +544,13 @@ main {
         width: 100%;
     }
 
+    .segundo h2 {
+        text-align: left;
+    }
+
     .icones {
         width: 100%;
+        justify-content: left;
     }
 
     .links {
