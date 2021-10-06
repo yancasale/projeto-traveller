@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url(./config.css);
 
 /* CSS Reset */
 
@@ -68,60 +69,11 @@ header {
     background: linear-gradient(72deg, rgba(67, 206, 162, 1) 0%, rgba(24, 90, 157, 1) 100%);
 }
 
+/* Menu Hamburger */
 
-/* Hamburguer Menu */
-
-.hamburger {
+#btn-mobile {
     display: none;
-    font-size: 20px;
-    border: 0;
-    cursor: pointer;
-    background-color: transparent;
-    color: #Ffff;
-}
-
-.hamburger:focus {
-    outline: none;
-}
-
-/* Menu escondido */
-
-.menu__link {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-    height: calc(100vh - 50px);
-    padding: 0 10px;
-    position: fixed;
-    left: -200px;
-    transition: 0.5s;
-    z-index: 2;
-    border-radius: 4px;
-    background: rgb(12, 7, 45);
-    background-color: #24258B;
-}
-
-.menu li {
-    margin: 10px 0;
-    text-align: left;
-}
-
-.menu__item {
-    font-size: 1.2em;
-    color: #fff;
-}
-
-.menu__item:hover {
-    text-decoration: underline;
-}
-
-.menu__item i {
-    margin-right: 10px;
-}
-
-.menu__link.open {
-    left: 0;
-}
+  }
 
 
 /* Navbar */
@@ -272,7 +224,6 @@ header {
     align-items: center;
     width: 100%;
     height: 710px;
-    /* border: 1px solid black; */
 }
 
 .header-content {
@@ -327,7 +278,6 @@ header {
 
 /* Main content */
 
-
 .main-container {
     width: 100%;
     margin: 0 auto;
@@ -335,7 +285,7 @@ header {
 
 .secao-apresentacao {
     display: flex;
-    
+
 }
 
 .container-apresentacao {
@@ -388,7 +338,10 @@ footer {
     background-color: rgba(24, 90, 157, 1);
 }
 
-    
+.mais-opcoes {
+    display: none;
+}
+
 
 
 
@@ -511,9 +464,89 @@ footer {
         justify-content: center;
     }
 
+    .container-stickytop {
+        justify-content: space-between;
+    }
+
     .sticky-links {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: rgb(20, 74, 128);
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #stickytop.active .sticky-links {
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #mais {
         display: none;
     }
+
+    .mais-opcoes {
+        display: block;
+    }
+
+    .sticky-links a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.089);
+        display: flex;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5em 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: #FFF;
+    }
+
+    #hamburger {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #stickytop.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #stickytop.active #hamburger::before {
+        transform: rotate(135deg);
+
+    }
+
+    #stickytop.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+
 }
 
 @media screen and (max-width: 707px) {

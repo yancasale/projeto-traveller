@@ -9,28 +9,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/hospedagem.css">
+    <link rel="stylesheet" href="./css/config.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/./favicon/pple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- Tags meta SEO Geral -->
-    <title>Traveller - Início</title>
+    <title>Traveller - Hospedagem</title>
     <meta name="description" content="">
     <meta name="author" content="Yan Casale">
     <meta name="robots" content="index">
@@ -53,19 +41,7 @@
 </head>
 
 <body>
-
     <header>
-        <nav class="menu">
-            <ul class="menu__link">
-                <li><a href="./contribua.html" class="menu__item"><i class="fas fa-dollar-sign"></i>Contribua</a></li>
-                <li><a href="./contato.html" class="menu__item"><i class="fas fa-address-book"></i>Contato</a></li>
-                <li><a href="./sobre.html" class="menu__item"><i class="fas fa-info-circle"></i>Sobre</a></li>
-                <li><a href="#!" class="menu__item"><i class="fab fa-facebook-f"></i>Facebook</a></li>
-                <li><a href="#!" class="menu__item"><i class="fab fa-instagram"></i>Instagram</a></li>
-                <li><a href="#!" class="menu__item"><i class="fab fa-youtube"></i>YouTube</a></li>
-            </ul>
-        </nav>
-
         <nav class="header-navbar" id="inicio">
             <div class="container-navbar">
                 <div class="navbar-item links">
@@ -75,7 +51,7 @@
                 </div>
 
                 <div class="navbar-item icones">
-                    <a href="#"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+                    <a href="./login.html"><i class="fas fa-sign-in-alt"></i> Entrar</a>
                     <a href="#" id="ajuda"><i class="fas fa-question-circle"></i> Ajuda</a>
 
                     <ul class="navbar-nav">
@@ -86,9 +62,9 @@
                             </a>
 
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#" style="color: #000; ">Mudar fonte</a></li>
-                                <li><a class="dropdown-item" href="#" style="color: #000;">Textos em negrito</a></li>
-                                <li><a class="dropdown-item" href="#" style="color: #000;">Cores em auto contraste</a>
+                                <li><a class="dropdown-item text-black" href="#">Mudar fonte</a></li>
+                                <li><a class="dropdown-item text-black" href="#">Textos em negrito</a></li>
+                                <li><a class="dropdown-item text-black" href="#">Cores em auto contraste</a>
                                 </li>
                             </ul>
                         </li>
@@ -103,35 +79,36 @@
                     <a href="#">Traveller</a>
                 </div>
 
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+
                 <div class="sticky-top-item sticky-links">
-                    <a href="./index.html" >Início</a>
-                    <a href="./hospedagem.html" class="active"hospedagem/>Hospedagem</a>
+                    <a href="./index.html">Início</a>
+                    <a href="./hospedagem.html" class="active" hospedagem />Hospedagem</a>
                     <a href="#">Aluguel de carro</a>
                     <a href="#">Gastronomia</a>
                     <a href="#">Cultura</a>
-                    <a href="#">Mais <i class="fas fa-caret-down"></i></a>
+                    <a href="#" id="mais">Mais <i class="fas fa-caret-down"></i></a>
+                    <a href="" class="mais-opcoes">Lorem</a>
+                    <a href="" class="mais-opcoes">Lorem</a>
+                    <a href="" class="mais-opcoes">Lorem</a>
+                    <a href="" class="mais-opcoes">Lorem</a>
                 </div>
-
-                <button class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
-                </button>
         </nav>
 
-        <section class="header-content-container">
-            <div class="header-content">
-                <div class="content-item segundo">
-                    <h2 class="text-white">Preparado para a viagem dos seus <strong>sonhos ?</strong></h2>
-
-                    <form action="">
-                        <input type="text" class="buscar" placeholder="Aonde você quer ir ?">
-                        <button class="btn btn-outline-light">Buscar</button>
-                    </form>
+        <section class="header-content">
+            <form action="#">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" style="border: none; background-color: #FFF;" id="basic-addon1"><i
+                            class="fas fa-search"></i></span>
+                    <input type="text" class="form-control input-texto" placeholder="Qual é seu destino ?"
+                        aria-label="Qual é seu destino ?" aria-describedby="basic-addon1">
+                    <input type="number" class="form-control input-texto" placeholder="Data da sua viagem"
+                        aria-describedby="basic-addon1">
+                    <button class="btn-primary">Buscar</button>
                 </div>
-
-                <div class="content-item primeiro ">
-                    <img src="./images/teste11.svg" width="800" alt="">
-                </div>
-            </div>
+            </form>
         </section>
 
         <div class="custom-shape-divider-bottom-1631945692">
@@ -161,7 +138,7 @@
 
                     <div class="cards">
                         <div class="card" style="width: 18rem;">
-                            <img src="./images/hospedagem/ibis.jpg" class="card-img-top" alt="...">
+                            <img src="./images/hospedagem/ibis.jpg" class="card-img-top" alt="Hotel IBIS">
                             <div class="card-body">
                                 <h5 class="card-title">IBIS Styles Anhembi</h5>
                                 <p class="card-text">Com design moderno e decoração inspirada no tema aviação, o hotel
@@ -171,7 +148,8 @@
                         </div>
 
                         <div class="card" style="width: 18rem;">
-                            <img src="./images/hospedagem/comfort.jpg" height="220px" class="card-img-top" alt="...">
+                            <img src="./images/hospedagem/comfort.jpg" height="220px" class="card-img-top"
+                                alt="Hotel Confort Ibirapuera">
                             <div class="card-body">
                                 <h5 class="card-title">Confort Ibirapuera</h5>
                                 <p class="card-text">O Comfort Ibirapuera possui aconchegantes apartamentos e oferecem
@@ -182,7 +160,8 @@
                         </div>
 
                         <div class="card" style="width: 18rem;">
-                            <img src="./images/hospedagem/104916_v5.jpeg" class="card-img-top" alt="..." height="220px">
+                            <img src="./images/hospedagem/104916_v5.jpeg" class="card-img-top"
+                                alt="Hotel Blue Tree Morumbi" height="220px">
                             <div class="card-body">
                                 <h5 class="card-title">Blue Tree Morumbi</h5>
                                 <p class="card-text">O Blue Tree Premium Morumbi é um hotel moderno e com atenção aos
@@ -192,7 +171,8 @@
                         </div>
 
                         <div class="card" style="width: 18rem;">
-                            <img src="./images/hospedagem/6284_ho_00_p_1024x768.jpg" class="card-img-top" alt="...">
+                            <img src="./images/hospedagem/6284_ho_00_p_1024x768.jpg" class="card-img-top"
+                                alt="Hotel Mercure Pamplona">
                             <div class="card-body">
                                 <h5 class="card-title">Mercure Pamplona</h5>
                                 <p class="card-text">O Mercure São Paulo Pamplona é bem localizado no bairro do Jardins,
@@ -213,7 +193,8 @@
 
                         <div class="cards">
                             <div class="card" style="width: 18rem;">
-                                <img src="./images/hospedagem/asdasdasdaAETGTGSYE.jpg" class="card-img-top" alt="...">
+                                <img src="./images/hospedagem/asdasdasdaAETGTGSYE.jpg" class="card-img-top"
+                                    alt="Hotel Sheraton WTC Hotel">
                                 <div class="card-body">
                                     <h5 class="card-title">Sheraton WTC Hotel</h5>
                                     <p class="card-text">O hotel inclui 297 quartos dos hóspedes com controle de
@@ -224,7 +205,8 @@
                             </div>
 
                             <div class="card" style="width: 18rem;">
-                                <img src="./images/hospedagem/bourbon.jpg" height="220px" class="card-img-top" alt="...">
+                                <img src="./images/hospedagem/bourbon.jpg" height="220px" class="card-img-top"
+                                    alt="Hotel Bourbon">
                                 <div class="card-body">
                                     <h5 class="card-title">Bourbon Convention</h5>
                                     <p class="card-text">Localizado em Moema, um dos bairros mais charmosos, tranquilos,
@@ -235,7 +217,8 @@
                             </div>
 
                             <div class="card" style="width: 18rem;">
-                                <img src="./images/hospedagem/golden tulip.jpeg" class="card-img-top" alt="..." height="220px">
+                                <img src="./images/hospedagem/golden tulip.jpeg" class="card-img-top"
+                                    alt="Hotel Golden Tulip" height="220px">
                                 <div class="card-body">
                                     <h5 class="card-title">Golden Tulip Plaza</h5>
                                     <p class="card-text">O Hotel Golden Tulip Plaza está localizado no Bairro Jardins, a
@@ -245,7 +228,8 @@
                             </div>
 
                             <div class="card" style="width: 18rem;">
-                                <img src="./images/hospedagem/btree.jpg" class="card-img-top" alt="...">
+                                <img src="./images/hospedagem/btree.jpg" class="card-img-top"
+                                    alt="Hotel Blue Tree Paulista">
                                 <div class="card-body">
                                     <h5 class="card-title">Blue Tree Paulista</h5>
                                     <p class="card-text">Os quartos do Blue Tree Towers Paulista Hotel têm TV de tela
@@ -259,7 +243,11 @@
                     </div>
     </main>
 
-    
+    <footer>
+        <p class="text-white">Todos os direitos reservados - Projeto Traveller</p>
+    </footer>
+
+
 
 
 

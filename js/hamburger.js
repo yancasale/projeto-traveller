@@ -1,6 +1,8 @@
-const hamburger = document.querySelector('.hamburger')
-const menuLink = document.querySelector('.menu__link')
+const btnMobile = document.getElementById('btn-mobile')
 
-hamburger.addEventListener('click', () => {
-    menuLink.classList.toggle('open')
-}); 
+function toggleMenu(event) {
+    const nav = document.getElementById('stickytop')
+    nav.classList.toggle('active')
+}
+
+btnMobile.addEventListener('click', toggleMenu)

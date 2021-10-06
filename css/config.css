@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --font-family: 'Montserrat', sans-serif;
+}
+  
+  body.largerFont {
+    font-size: 18px;
+  }
+  
+  body.bodyBold span, body.bodyBold p, body.bodyBold a, body.bodyBold h1, body.bodyBold h2, body.bodyBold h3{
+    font-weight: 900;
+  }
+
+body.contraste {
+    background-color: var(--color-black);
+}
+
+body.contraste .secao-apresentacao{
+    background-color: var(--color-black);
+}
+
+body.contraste header {
+    background: #000;
+}
+
+body.contraste h1,
+body.contraste h2,
+body.contraste h3,
+body.contraste span,
+body.contraste p {
+    color: var(--color-white) !important;
+}
+
+body.contraste .header__menu--links a {
+    color: var(--color-white) !important;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(24, 90, 157, 1);
+}
+
+

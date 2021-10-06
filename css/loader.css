@@ -14,7 +14,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background: linear-gradient(72deg, rgba(67, 206, 162, 1) 0%, rgba(24, 90, 157, 1) 100%);
+    background-color: rgba(24, 90, 157, 1) ;
     display: flex;
     justify-content: center;
     align-items: center;
