@@ -133,48 +133,6 @@
     font-size: 0.95em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Queries */
 
 @media screen and (max-width: 1702px) {
@@ -331,6 +289,10 @@
         transform: rotate(-135deg);
         top: -7px;
 
+    }
+
+    .custom-shape-divider-bottom-1631945692 {
+        display: none;
     }
 }
 
