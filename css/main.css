@@ -225,5 +225,10 @@ footer {
     width: 100%;
     height: 300px;
     background-color: rgba(24, 90, 157, 1);
+    margin-top: 150px;
+}
+
+.bg-cinza {
+    background-color: #F7F9FD;
 }
 

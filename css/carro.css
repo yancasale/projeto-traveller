@@ -1,0 +1,415 @@
+@import url(./main.css);
+
+/* Header content */
+
+.header-content-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 710px;
+}
+
+.header-content {
+    display: flex;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.content-item {
+    display: flex;
+    width: 50%;
+    height: 600px;
+}
+
+.primeiro img {
+    height: 600px;
+}
+
+.segundo {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.segundo h2 {
+    font-size: 3.5em;
+    text-align: left;
+    width: 90%;
+}
+
+.segundo form {
+    display: flex;
+    width: 90%;
+    margin-top: 130px;
+}
+
+.segundo input {
+    padding: 5px 10px;
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.segundo a{
+    width: 30%;
+    margin-top: 50px;
+}
+
+/* Main content */
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section-empresas-parceiras {
+    width: 100%;
+    padding: 30px;
+}
+
+.empresas-parceiras {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.empresas-parceiras p {
+    margin: 25px auto;
+    width: 93%;
+    text-align: center;
+}
+
+.empresa-item {
+    width: 370px;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.empresa-item img {
+    height: 230px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+}
+
+.container-empresa-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 600px;
+    margin: 30px auto;
+}
+
+.empresa-img {
+    display: flex;
+    justify-content: center;
+}
+
+.empresa-img iframe {
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.carro-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+    margin: 65px auto;
+}
+
+.card-carro {
+    padding: 10px;
+    width: 280px;
+    margin-top: 30px;
+    margin-right: 30px;
+    background-color: #ffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.075), 0 6px 20px 0 rgba(0, 0, 0, 0.103);
+    border-radius: 5px;
+    padding-bottom: 30px;
+}
+
+.card-carro p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.valor {
+    color: var(--color-primary);
+}
+
+.diaria {
+    font-size: 0.8em;
+    color: var(--color-primary);
+}
+
+.card-carro a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.btn-carro {
+	border-radius:28px;
+    padding: 8px 20px;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1702px) {
+
+    .segundo button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1702px) {
+
+    .segundo button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1608px) {
+
+    .primeiro img {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 1458px) {
+
+    .container-stickytop {
+        width: 80%;
+    }
+
+    .sticky-top-item {
+        width: 80%;
+    }
+
+    .sticky-titulo {
+        width: 20%;
+    }
+
+    .container-navbar {
+        width: 80%;
+    }
+
+    .header-content {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1406px) {
+
+    .primeiro img {
+        width: 600px;
+    }
+}
+
+
+@media screen and (max-width: 1198px) {
+
+    .primeiro img {
+        height: 500px;
+    }
+
+    .primeiro {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width: 1015px) {
+
+    .primeiro {
+        display: none;
+    }
+
+    .content-item {
+        width: 100%;
+    }
+
+    .segundo {
+        align-items: center;
+    }
+
+    .segundo h2 {
+        text-align: center;
+    }
+
+    .segundo form {
+        justify-content: center;
+    }
+
+    .container-stickytop {
+        justify-content: space-between;
+    }
+
+    .sticky-links {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: rgb(20, 74, 128);
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #stickytop.active .sticky-links {
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #mais {
+        display: none;
+    }
+
+    .mais-opcoes {
+        display: block;
+    }
+
+    .sticky-links a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.089);
+        display: flex;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5em 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: #FFF;
+    }
+
+    #hamburger {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #stickytop.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #stickytop.active #hamburger::before {
+        transform: rotate(135deg);
+
+    }
+
+    #stickytop.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+
+    .custom-shape-divider-bottom-1631945692 {
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 707px) {
+
+    .container-navbar {
+        width: 90%;
+    }
+
+    .links {
+        width: 5%;
+    }
+
+    .icones {
+        width: 95%;
+    }
+
+    .container-stickytop {
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width: 509px) {
+
+    .segundo {
+        width: 100%;
+    }
+
+    .icones {
+        width: 100%;
+        justify-content: left;
+    }
+
+    .links {
+        display: none;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buscar {
+        display: flex;
+        width: 100% !important;
+    }
+
+    form .btn {
+        width: 40%;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 320px) {
+    .segundo h2 {
+        font-size: 3em;
+    }
+}
