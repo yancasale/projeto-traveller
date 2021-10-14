@@ -67,6 +67,7 @@ header {
     height: 60rem;
     background: rgb(67, 206, 162);
     background: linear-gradient(72deg, rgba(67, 206, 162, 1) 0%, rgba(24, 90, 157, 1) 100%);
+    margin-bottom: 30px;
 }
 
 /* Menu Hamburger */

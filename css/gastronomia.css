@@ -1,0 +1,418 @@
+@import url(./main.css);
+
+/* Header content */
+
+.header-content-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 710px;
+}
+
+.header-content {
+    display: flex;
+    width: 70%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.content-item {
+    display: flex;
+    width: 50%;
+    height: 600px;
+}
+
+.primeiro img {
+    height: 600px;
+}
+
+.segundo {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.segundo h2 {
+    font-size: 3.5em;
+    text-align: left;
+    width: 90%;
+}
+
+.segundo form {
+    display: flex;
+    width: 90%;
+    margin-top: 130px;
+}
+
+.segundo input {
+    padding: 5px 10px;
+    width: 70%;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.segundo a{
+    width: 30%;
+    margin-top: 50px;
+}
+
+/* Main content */
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.secao-apresentacao {
+    display: flex;
+
+}
+
+.container-apresentacao {
+    display: flex;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.apresentacao-img,
+.apresentacao-text {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    width: 50%;
+}
+
+.apresentacao-text {
+    flex-direction: column;
+}
+
+.apresentacao-text h3 {
+    padding-bottom: 10px;
+    font-size: 2.7em;
+}
+
+.bg-cinza {
+    background-color: #F7F9FD;
+}
+
+.card-container {
+    width: 100%;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.card-container h4 {
+    font-size: 1.8em;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.card {
+    margin-top: 50px;
+    margin-right: 50px;
+    height: 470px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95em;
+}
+
+.card img {
+    height: 250px;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1702px) {
+
+    .segundo button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1702px) {
+
+    .segundo button {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 1458px) {
+
+    .container-stickytop {
+        width: 80%;
+    }
+
+    .sticky-top-item {
+        width: 80%;
+    }
+
+    .sticky-titulo {
+        width: 20%;
+    }
+
+    .container-navbar {
+        width: 80%;
+    }
+
+    .header-content {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1406px) {
+    .container-apresentacao {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 1198px) {
+
+    .primeiro img {
+        height: 500px;
+    }
+
+    .primeiro {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-apresentacao {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 1015px) {
+
+    .primeiro {
+        display: none;
+    }
+
+    .content-item {
+        width: 100%;
+    }
+
+    .segundo {
+        align-items: center;
+    }
+
+    .segundo h2 {
+        text-align: center;
+    }
+
+    .segundo form {
+        justify-content: center;
+    }
+
+    .container-stickytop {
+        justify-content: space-between;
+    }
+
+    .sticky-links {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: rgb(20, 74, 128);
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #stickytop.active .sticky-links {
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #mais {
+        display: none;
+    }
+
+    .mais-opcoes {
+        display: block;
+    }
+
+    .sticky-links a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.089);
+        display: flex;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5em 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+        color: #FFF;
+    }
+
+    #hamburger {
+        display: block;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #stickytop.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #stickytop.active #hamburger::before {
+        transform: rotate(135deg);
+
+    }
+
+    #stickytop.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -7px;
+
+    }
+
+    .custom-shape-divider-bottom-1631945692 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 962px) {
+    .container-apresentacao {
+        width: 95%;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    .servicos {
+        padding-top: 50px;
+    }
+
+    .apresentacao-text {
+        width: 100%;
+        
+    }
+}
+
+@media screen and (max-width: 808px) {
+    .apresentacao-img img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 707px) {
+
+    .container-navbar {
+        width: 90%;
+    }
+
+    .links {
+        width: 5%;
+    }
+
+    .icones {
+        width: 95%;
+    }
+
+    .container-stickytop {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 509px) {
+
+    .segundo {
+        width: 100%;
+    }
+
+    .segundo h2 {
+        text-align: left;
+    }
+
+    .icones {
+        width: 100%;
+        justify-content: left;
+    }
+
+    .links {
+        display: none;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .buscar {
+        display: flex;
+        width: 100% !important;
+    }
+
+    form .btn {
+        width: 40%;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    .apresentacao-img img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .apresentacao-img img {
+        height: 350px;
+    }
+
+    .apresentacao-text h3 {
+        font-size: 2em;
+    }
+
+    .apresentacao-text p {
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .segundo h2 {
+        font-size: 3em;
+    }
+}
