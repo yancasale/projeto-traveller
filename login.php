@@ -1,3 +1,51 @@
+<?php 
+
+session_start();
+
+	include("connection.php");
+	include("functions.php");
+
+
+	if($_SERVER['REQUEST_METHOD'] == "POST")
+	{
+		//something was posted
+		$user_name = $_POST['user_name'];
+		$password = $_POST['password'];
+
+		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		{
+
+			//read from database
+			$query = "select * from users where user_name = '$user_name' limit 1";
+			$result = mysqli_query($con, $query);
+
+			if($result)
+			{
+				if($result && mysqli_num_rows($result) > 0)
+				{
+
+					$user_data = mysqli_fetch_assoc($result);
+					
+					if($user_data['password'] === $password)
+					{
+
+						$_SESSION['user_id'] = $user_data['user_id'];
+						header("Location: index.php");
+						die;
+					}
+				}
+			}
+			
+			echo "wrong username or password!";
+		}else
+		{
+			echo "wrong username or password!";
+		}
+	}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -47,31 +95,29 @@
 
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form method="post">
                 <h1>Crie sua conta</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                 </div>
                 <span>ou use seu email para se registrar</span>
-                <input type="text" placeholder="Seu nome" />
-                <input type="email" placeholder="Seu Email" />
-                <input type="password" placeholder="Sua senha" />
-                <button>Criar conta</button>
+                <input type="text" placeholder="Seu nome" name="user_name" />
+                <input type="password" placeholder="Sua senha" name="password" />
+                <button type="submit" value="Signup">Criar conta</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form method="post">
                 <h1>Faça seu Login</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                 </div>
                 <span>ou use sua conta</span>
-                <input type="email" placeholder="Seu Email" />
                 <input type="password" placeholder="Sua senha" />
                 <a href="#">Esqueceu sua senha ?</a>
-                <button>Entrar</button>
+                <button type="submit" value="Login">Entrar</button>
             </form>
         </div>
         <div class="overlay-container">
