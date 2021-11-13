@@ -113,16 +113,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btn-primary {
-    background-color: #43cea2;
-    border: 1px solid #43cea2;
-}
-
-.btn-primary:hover {
-    background-color: #185a9d;
-
-}
-
 .card-title {
     font-weight: 600;
     border-bottom: 1px solid #ccc;
@@ -131,6 +121,16 @@
 
 .card-text {
     font-size: 0.95em;
+}
+
+.btn-primary {
+    background-color: #43cea2;
+    border: 1px solid #43cea2;
+}
+
+.btn-primary:hover {
+    background-color: #185a9d;
+    border: 1px solid #185a9d;
 }
 
 /* Media Queries */

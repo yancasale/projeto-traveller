@@ -218,6 +218,16 @@ header {
     color: #fff !important;
 }
 
+.btn-primary {
+    background-color: #185a9d;
+    border: 1px solid #185a9d;
+}
+
+.btn-primary:hover {
+    background-color: #43cea2;
+    border: 1px solid #43cea2;
+}
+
 
 footer {
     display: flex;
@@ -231,5 +241,9 @@ footer {
 
 .bg-cinza {
     background-color: #F7F9FD;
+}
+
+textarea:focus, input:focus{
+    outline: 5px solid #0080ff77;
 }
 
